@@ -1,0 +1,9 @@
+# Never commit user data or local secrets.
+*.env
+.env.*
+*.backup.json
+*measurements*.csv
+*profiles*.json
+.DS_Store
+Thumbs.db
+node_modules/

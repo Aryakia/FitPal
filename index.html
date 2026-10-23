@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#13231d">
+<meta name="description" content="FitPal is a free, privacy-first home fitness planner with visual exercise guides, workouts, personal weight tracking and practical nutrition ideas.">
+<title>FitPal — Your training, your way</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div id="app">
+<aside class="sidebar">
+  <div class="brand"><div class="brand-symbol">F<span>↗</span></div><div><b>FitPal<span class="dot">.</span></b><small>MOVE YOUR WAY</small></div></div>
+  <div class="nav-tag">YOUR SPACE</div>
+  <nav id="mainNav" class="nav" aria-label="Main navigation">
+  <button data-page="dashboard" class="active"><span>◫</span> Overview</button>
+  <button data-page="plan"><span>▦</span> My workout plan</button>
+  <button data-page="routines"><span>◴</span> My routines</button>
+  <button data-page="atlas"><span>⌗</span> Exercise atlas</button>
+  <button data-page="progress"><span>↗</span> Progress tracker</button>
+  <button data-page="nutrition"><span>✦</span> Food & nutrition</button>
+  <button data-page="settings"><span>⚙</span> My preferences</button>
+  <button data-page="profiles"><span>☺</span> My profiles</button>
+  <button data-page="account"><span>✉</span> Account & sync</button></nav>
+  <div class="sidebar-bottom"><div class="side-spark">✦</div><strong>Progress belongs to you.</strong><p>Build routines as a guest, or connect a verified cloud account for sync.</p><button data-page="profiles" class="mini-action">Your profiles ↗</button></div>
+  <div class="side-credit">OPEN FITNESS PROJECT <span>v2.0</span></div>
+</aside>
+<div class="shell"><header class="topbar"><div class="mobilebrand"><b>FitPal<span class="dot">.</span></b></div><div class="topcontext"><span class="bar-caption">YOUR SPACE</span><strong id="headerLabel">Welcome to FitPal</strong></div><div class="bar-right"><button id="profileSwitcher" class="profile-switcher" data-page="profiles" aria-label="Manage or switch profiles">◎ Profiles ⌄</button><span class="privacy-chip"><i></i> Browser-private</span><button id="unitButton" class="outline-chip">kg / lb</button></div></header>
+<main id="content" tabindex="-1"></main>
+<footer class="site-footer"><div><b>FitPal.</b> Open-access fitness guidance. Not individualized medical treatment.</div><div>Exercise artwork: <a href="https://github.com/everkinetic/data" target="_blank" rel="noopener noreferrer">Everkinetic</a> & <a href="https://bryllim.github.io/workout-guide/" target="_blank" rel="noopener noreferrer">Bryl Lim</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> · <a href="https://github.com/bryllim/workout-guide/blob/main/ATTRIBUTION.md" target="_blank" rel="noopener noreferrer">Full attribution</a></div></footer></div>
+</div>
+<nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation"></nav>
+<div id="modal" class="modal-backdrop" hidden><div class="modal-panel" id="modalPanel" role="dialog" aria-modal="true" aria-label="Exercise details"><button class="modal-x" data-close-modal aria-label="Close dialog">×</button><div id="modalBody"></div></div></div>
+<div id="notice" role="status" class="toast"></div>
+<script src="config.js"></script>
+<script src="assets/app.js" defer></script>
+</body>
+</html>
